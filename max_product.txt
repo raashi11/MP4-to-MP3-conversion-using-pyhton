@@ -1,0 +1,29 @@
+class Sol {
+	public static void main (String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Number of test cases");
+	    int t=sc.nextInt();
+	   
+	    while(t-->0){
+            System.out.println("Size of Array");  
+	    int n=sc.nextInt();
+	    if(n<2){
+	      System.out.println("Array should have two or more elements");  
+        }
+        System.out.println("Elements of array");  
+	    int[] a=new int[n];
+		for(int i=0;i<n;i++){
+		    a[i]=sc.nextInt();
+        }
+        System.out.println("Sorted Array");  
+		Arrays.sort(a);
+		for(int i=0;i<n;i++){
+		   System.out.println(a[i]);
+        }
+        System.out.println("Max product");  
+		System.out.println(a[n-1]*a[n-2]);
+	    
+	}
+	}
+	
+}
